@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+.button {
+background-color: red;
+	border: 2px solid whitesmoke;
+	color: whitesmoke;
+	padding: 0.5em 0.5em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 3px 3px 8px 0 #000; 
+}
+body {
+  background-color: blue;
+  background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+h1{
+   background-color: Green;
+  color: white;
+}
+h3{
+   background-color: red;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+<center>
+
+    
+<h1>DIABETES PREDICTION WEB APP</h1>
+<pre>
+<form action="/predict"method="POST">
+
+<input type='text' name="Pregnancy" placeholder="Pregnancy" required="required"/>
+<input type='text' name="Glucose" placeholder="Glucose" required="required"/>
+<input type='text' name="Bloodpressure" placeholder="Bloodpressure" required="required"/>
+<input type='text' name="SkinThickness" placeholder="SkinThickness" required="required"/>
+<input type='text' name="Insulin" placeholder="Insulin" required="required"/>
+<input type='text' name="BMI" placeholder="BMI" required="required"/>
+<input type='text' name="Diabetestpedigreefunction" placeholder="Diabetestpedigreefunction" required="required"/>
+<input type='text' name="Age" placeholder="Age" required="required"/>
+
+
+
+
+<button type="submit" class="button">RESULT</button>
+</form>
+
+<!-- <textarea>
+{{prediction_text}}
+</textarea> -->
+</pre>
+</center>
+</body>
+</html>
